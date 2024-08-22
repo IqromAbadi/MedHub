@@ -13,7 +13,7 @@ class SignupView extends GetView<SignupController> {
       appBar: AppBar(
         leading: IconButton(
           icon: SvgPicture.asset(
-            "assets/images/arrowback.svg",
+            "assets/icons/arrowback.svg",
             width: 22.w,
             height: 22.h,
           ),
@@ -192,7 +192,7 @@ class SignupView extends GetView<SignupController> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           SvgPicture.asset(
-                            "assets/images/back.svg",
+                            "assets/icons/back.svg",
                             width: 10.w,
                             height: 10.h,
                           ),

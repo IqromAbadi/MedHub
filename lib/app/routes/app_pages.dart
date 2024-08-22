@@ -6,6 +6,10 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
+import '../modules/productdetails/bindings/productdetails_binding.dart';
+import '../modules/productdetails/views/productdetails_view.dart';
+import '../modules/profile/bindings/profile_binding.dart';
+import '../modules/profile/views/profile_view.dart';
 import '../modules/signup/bindings/signup_binding.dart';
 import '../modules/signup/views/signup_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
@@ -20,7 +24,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH_SCREEN;
+  static const INITIAL = Routes.PRODUCTDETAILS;
 
   static final routes = [
     GetPage(
@@ -57,6 +61,16 @@ class AppPages {
       name: _Paths.VERIFYOTP,
       page: () => const VerifyotpView(),
       binding: VerifyotpBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.PRODUCTDETAILS,
+      page: () => const ProductdetailsView(),
+      binding: ProductdetailsBinding(),
     ),
   ];
 }

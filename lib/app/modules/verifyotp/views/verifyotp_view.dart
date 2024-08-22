@@ -15,7 +15,7 @@ class VerifyotpView extends GetView<VerifyotpController> {
       appBar: AppBar(
         leading: IconButton(
           icon: SvgPicture.asset(
-            "assets/images/arrowback.svg",
+            "assets/icons/arrowback.svg",
             width: 22.w,
             height: 22.h,
           ),
