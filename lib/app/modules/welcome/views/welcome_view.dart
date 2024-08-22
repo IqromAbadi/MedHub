@@ -71,7 +71,9 @@ class WelcomeView extends GetView<WelcomeController> {
                   backgroundColor: const Color(0xff0F3759),
                   minimumSize: Size(311.w, 50.h),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed("/signup");
+                },
                 child: Text(
                   "SIGN UP WITH EMAIL",
                   style: TextStyle(
@@ -85,7 +87,7 @@ class WelcomeView extends GetView<WelcomeController> {
               SizedBox(height: 20.h),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xffFFFFFF),
+                  elevation: 0,
                   minimumSize: Size(311.w, 50.h),
                   side: BorderSide(
                     color: const Color(0xff0F3759).withOpacity(0.1),
@@ -100,7 +102,7 @@ class WelcomeView extends GetView<WelcomeController> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
-                        "assets/images/facebook.svg",
+                        "assets/icons/facebook.svg",
                         width: 18.w,
                       ),
                       SizedBox(width: 10.w),
@@ -120,7 +122,7 @@ class WelcomeView extends GetView<WelcomeController> {
               SizedBox(height: 20.h),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xffFFFFFF),
+                  elevation: 0,
                   minimumSize: Size(311.w, 50.h),
                   side: BorderSide(
                     color: const Color(0xff0F3759).withOpacity(0.1),
@@ -135,7 +137,7 @@ class WelcomeView extends GetView<WelcomeController> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SvgPicture.asset(
-                        "assets/images/google.svg",
+                        "assets/icons/google.svg",
                         width: 18.w,
                       ),
                       SizedBox(width: 10.w),

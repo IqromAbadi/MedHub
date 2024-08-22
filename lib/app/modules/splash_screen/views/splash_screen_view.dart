@@ -34,14 +34,14 @@ class SplashScreenView extends GetView<SplashScreenController> {
             child: Image.asset(
               'assets/images/patern.png',
               fit: BoxFit.cover,
-              width: 1.sw, // Menggunakan 100% width dari ScreenUtil
+              width: 1.sw,
             ),
           ),
           Center(
             child: SvgPicture.asset(
-              'assets/images/logo.svg',
-              width: 150.w, // Responsive width 150 dp
-              height: 150.h, // Responsive height 150 dp
+              'assets/icons/logo.svg',
+              width: 150.w,
+              height: 150.h,
             ),
           ),
         ],

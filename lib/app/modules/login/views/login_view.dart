@@ -14,7 +14,7 @@ class LoginView extends GetView<LoginController> {
       appBar: AppBar(
         leading: IconButton(
           icon: SvgPicture.asset(
-            "assets/images/arrowback.svg",
+            "assets/icons/arrowback.svg",
             width: 22.w,
             height: 22.h,
           ),
@@ -67,7 +67,7 @@ class LoginView extends GetView<LoginController> {
                       prefixIcon: Padding(
                         padding: EdgeInsets.all(12.w),
                         child: SvgPicture.asset(
-                          "assets/images/person.svg",
+                          "assets/icons/person.svg",
                           color: const Color(0xff090F47),
                         ),
                       ),
@@ -96,7 +96,7 @@ class LoginView extends GetView<LoginController> {
                       prefixIcon: Padding(
                         padding: EdgeInsets.all(12.w),
                         child: SvgPicture.asset(
-                          "assets/images/lock.svg",
+                          "assets/icons/lock.svg",
                           color: const Color(0xff090F47),
                         ),
                       ),
@@ -150,7 +150,7 @@ class LoginView extends GetView<LoginController> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SvgPicture.asset(
-                      "assets/images/back.svg",
+                      "assets/icons/back.svg",
                       width: 10.w,
                       height: 10.h,
                     ),

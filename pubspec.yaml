@@ -31,6 +31,7 @@ flutter_launcher_icons:
 flutter: 
   assets:
     - assets/images/
+    - assets/icons/
   fonts:
     - family: Overpass
       fonts:
