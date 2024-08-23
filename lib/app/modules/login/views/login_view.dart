@@ -121,9 +121,11 @@ class LoginView extends GetView<LoginController> {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xff090F47),
-                      minimumSize: Size(311.w, 50.h),
+                      minimumSize: Size(311.w, 50.w),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.offAllNamed("/home");
+                    },
                     child: Text(
                       "LOGIN",
                       style: TextStyle(

@@ -55,9 +55,11 @@ class SuccesView extends GetView {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xff090F47),
-                minimumSize: Size(double.infinity, 50.h),
+                minimumSize: Size(311.w, 50.w),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Get.offAllNamed("/home");
+              },
               child: Text(
                 "Continue Order",
                 style: TextStyle(

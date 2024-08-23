@@ -11,17 +11,18 @@ class WelcomeView extends GetView<WelcomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Center(
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 "assets/images/welcome.png",
-                width: 300.w,
+                width: 258.w,
+                height: 258.h,
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -54,7 +55,7 @@ class WelcomeView extends GetView<WelcomeController> {
                   ),
                 ],
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               Text(
                 "Do you want some help with your\nhealth to get better life?",
                 style: TextStyle(
@@ -65,11 +66,11 @@ class WelcomeView extends GetView<WelcomeController> {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff0F3759),
-                  minimumSize: Size(311.w, 50.h),
+                  minimumSize: Size(311.w, 50.w),
                 ),
                 onPressed: () {
                   Get.toNamed("/signup");
@@ -84,11 +85,11 @@ class WelcomeView extends GetView<WelcomeController> {
                   ),
                 ),
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   elevation: 0,
-                  minimumSize: Size(311.w, 50.h),
+                  minimumSize: Size(311.w, 50.w),
                   side: BorderSide(
                     color: const Color(0xff0F3759).withOpacity(0.1),
                     width: 1,
@@ -119,11 +120,11 @@ class WelcomeView extends GetView<WelcomeController> {
                   ),
                 ),
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   elevation: 0,
-                  minimumSize: Size(311.w, 50.h),
+                  minimumSize: Size(311.w, 50.w),
                   side: BorderSide(
                     color: const Color(0xff0F3759).withOpacity(0.1),
                     width: 1,
@@ -154,7 +155,7 @@ class WelcomeView extends GetView<WelcomeController> {
                   ),
                 ),
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 15.h),
               TextButton(
                 onPressed: () {
                   Get.toNamed("/login");
