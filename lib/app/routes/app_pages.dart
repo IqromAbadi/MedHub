@@ -4,6 +4,8 @@ import '../modules/add/bindings/add_binding.dart';
 import '../modules/add/views/add_view.dart';
 import '../modules/cart/bindings/cart_binding.dart';
 import '../modules/cart/views/cart_view.dart';
+import '../modules/category/bindings/category_binding.dart';
+import '../modules/category/views/category_view.dart';
 import '../modules/checkout/bindings/checkout_binding.dart';
 import '../modules/checkout/views/checkout_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -99,6 +101,11 @@ class AppPages {
       name: _Paths.ADD,
       page: () => const AddView(),
       binding: AddBinding(),
+    ),
+    GetPage(
+      name: _Paths.CATEGORY,
+      page: () => const CategoryView(),
+      binding: CategoryBinding(),
     ),
   ];
 }

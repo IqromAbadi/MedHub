@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/notification_controller.dart';
 
 class NotificationView extends GetView<NotificationController> {
@@ -15,7 +13,7 @@ class NotificationView extends GetView<NotificationController> {
       ),
       body: const Center(
         child: Text(
-          'NotificationView is working',
+          'Coming Soon!',
           style: TextStyle(fontSize: 20),
         ),
       ),
