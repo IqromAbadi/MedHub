@@ -12,6 +12,8 @@ abstract class Routes {
   static const VERIFYOTP = _Paths.VERIFYOTP;
   static const PROFILE = _Paths.PROFILE;
   static const PRODUCTDETAILS = _Paths.PRODUCTDETAILS;
+  static const CART = _Paths.CART;
+  static const CHECKOUT = _Paths.CHECKOUT;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const VERIFYOTP = '/verifyotp';
   static const PROFILE = '/profile';
   static const PRODUCTDETAILS = '/productdetails';
+  static const CART = '/cart';
+  static const CHECKOUT = '/checkout';
 }
