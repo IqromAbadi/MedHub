@@ -102,7 +102,7 @@ class VerifyotpView extends GetView<VerifyotpController> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xff090F47),
-                minimumSize: Size(double.infinity, 50.h),
+                minimumSize: Size(311.w, 50.w),
               ),
               onPressed: () {
                 Get.to(() => VerifysuccesView());

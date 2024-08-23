@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
+import 'package:medhub/app/modules/home/views/home_view.dart';
 
 import '../controllers/cart_controller.dart';
 
@@ -30,7 +31,7 @@ class CartView extends GetView<CartController> {
           ),
           color: const Color(0xff090F47),
           onPressed: () {
-            Get.back();
+            Get.to(() => const HomeView());
           },
         ),
       ),
@@ -121,7 +122,7 @@ class CartView extends GetView<CartController> {
                                         .withOpacity(0.45),
                                   ),
                                 ),
-                                SizedBox(height: 20.h),
+                                SizedBox(height: 15.h),
                                 Text(
                                   "Rp 25.000",
                                   style: TextStyle(
@@ -552,9 +553,11 @@ class CartView extends GetView<CartController> {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xff090F47),
-                  minimumSize: Size(311.w, 50.h),
+                  minimumSize: Size(311.w, 50.w),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed("/checkout/succes");
+                },
                 child: Text(
                   "Place Order @ Rp 185.000",
                   style: TextStyle(

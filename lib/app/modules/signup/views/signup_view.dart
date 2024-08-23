@@ -166,7 +166,7 @@ class SignupView extends GetView<SignupController> {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xff090F47),
-                      minimumSize: Size(311.w, 50.h),
+                      minimumSize: Size(311.w, 50.w),
                     ),
                     onPressed: () {
                       Get.toNamed("/verifyotp");
