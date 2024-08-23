@@ -1,28 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
+
 import 'package:get/get.dart';
 
-class VerifysuccesView extends GetView {
-  const VerifysuccesView({Key? key}) : super(key: key);
-
+class SuccesView extends GetView {
+  const SuccesView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: SvgPicture.asset(
-            "assets/icons/arrowback.svg",
-            width: 22.w,
-            height: 22.h,
-          ),
-          color: const Color(0xff090F47),
-          onPressed: () {
-            Get.back();
-          },
-        ),
-        centerTitle: true,
-      ),
       body: Column(
         children: [
           Expanded(
@@ -39,7 +25,7 @@ class VerifysuccesView extends GetView {
                     ),
                     SizedBox(height: 20.h),
                     const Text(
-                      "Phone Number Verified",
+                      "Thank You",
                       style: TextStyle(
                         fontFamily: "Overpass",
                         fontSize: 24,
@@ -49,7 +35,7 @@ class VerifysuccesView extends GetView {
                     ),
                     SizedBox(height: 10.h),
                     Text(
-                      "Congratulations, your phone number has been verified. You can start using the app",
+                      "Your Order will be delivered with invoice #INV20240817. You can track the delivery in the order section.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Overpass",
@@ -71,11 +57,9 @@ class VerifysuccesView extends GetView {
                 backgroundColor: const Color(0xff090F47),
                 minimumSize: Size(double.infinity, 50.h),
               ),
-              onPressed: () {
-                Get.offAllNamed('/home');
-              },
+              onPressed: () {},
               child: Text(
-                "CONTINUE",
+                "Continue Order",
                 style: TextStyle(
                   fontFamily: "Overpass",
                   fontSize: 16.sp,
