@@ -191,13 +191,18 @@ class HomeView extends GetView<HomeController> {
                                   color: const Color(0xff091C3F),
                                 ),
                               ),
-                              Text(
-                                "More",
-                                style: TextStyle(
-                                  fontFamily: "Overpass",
-                                  fontSize: 13.sp,
-                                  fontWeight: FontWeight.w400,
-                                  color: const Color(0xff00A59B),
+                              GestureDetector(
+                                onTap: () {
+                                  Get.toNamed("/category");
+                                },
+                                child: Text(
+                                  "More",
+                                  style: TextStyle(
+                                    fontFamily: "Overpass",
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w400,
+                                    color: const Color(0xff00A59B),
+                                  ),
                                 ),
                               ),
                             ],

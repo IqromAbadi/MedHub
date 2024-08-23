@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-
 import 'package:get/get.dart';
 import 'package:medhub/app/modules/home/views/home_view.dart';
-
 import '../controllers/cart_controller.dart';
 
 class CartView extends GetView<CartController> {
