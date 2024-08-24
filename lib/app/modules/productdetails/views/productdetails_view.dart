@@ -344,9 +344,7 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                             )
                           ],
                         ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
+                        Spacer(),
                         Text(
                           "923 Ratings\nand 257 Reviews",
                           style: TextStyle(
@@ -690,7 +688,9 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                   backgroundColor: const Color(0xff090F47),
                   minimumSize: Size(311.w, 50.w),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed("/cart");
+                },
                 child: Text(
                   "GO TO CART",
                   style: TextStyle(

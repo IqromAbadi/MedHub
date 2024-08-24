@@ -110,6 +110,10 @@ class HomeController extends GetxController {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(
+          color: const Color(0xffF5F7FA),
+          width: 2.w,
+        ),
       ),
       child: Column(
         children: [
@@ -180,6 +184,7 @@ class HomeController extends GetxController {
                             "assets/icons/star.svg",
                             width: 13.w,
                             height: 12.h,
+                            color: Colors.white,
                           ),
                           SizedBox(width: 5.w),
                           Text(

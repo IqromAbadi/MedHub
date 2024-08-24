@@ -120,7 +120,7 @@ class CartView extends GetView<CartController> {
                                         .withOpacity(0.45),
                                   ),
                                 ),
-                                SizedBox(height: 15.h),
+                                SizedBox(height: 5.h),
                                 Text(
                                   "Rp 25.000",
                                   style: TextStyle(
@@ -161,7 +161,7 @@ class CartView extends GetView<CartController> {
                                 children: [
                                   Container(
                                     width: 92.w,
-                                    height: 32.h,
+                                    height: 25.h,
                                     decoration: BoxDecoration(
                                       color: const Color(0xffF1FFEA),
                                       borderRadius: BorderRadius.circular(16.h),
@@ -182,7 +182,9 @@ class CartView extends GetView<CartController> {
                                                 horizontal: 10.w,
                                                 vertical: 10.w),
                                             child: SvgPicture.asset(
-                                                "assets/icons/-.svg"),
+                                                "assets/icons/-.svg",
+                                                width: 20.w,
+                                                height: 20.h),
                                           ),
                                         ),
                                         Text(
@@ -205,7 +207,7 @@ class CartView extends GetView<CartController> {
                                                 horizontal: 10.w,
                                                 vertical: 10.w),
                                             child: SvgPicture.asset(
-                                                "assets/icons/+.svg"),
+                                                "assets/icons/+1.svg"),
                                           ),
                                         )
                                       ],
@@ -266,7 +268,7 @@ class CartView extends GetView<CartController> {
                                         .withOpacity(0.45),
                                   ),
                                 ),
-                                SizedBox(height: 20.h),
+                                SizedBox(height: 5.h),
                                 Text(
                                   "Rp 18.000",
                                   style: TextStyle(
@@ -307,7 +309,7 @@ class CartView extends GetView<CartController> {
                                 children: [
                                   Container(
                                     width: 92.w,
-                                    height: 32.h,
+                                    height: 25.h,
                                     decoration: BoxDecoration(
                                       color: const Color(0xffF1FFEA),
                                       borderRadius: BorderRadius.circular(16.h),
@@ -351,7 +353,7 @@ class CartView extends GetView<CartController> {
                                                 horizontal: 10.w,
                                                 vertical: 10.w),
                                             child: SvgPicture.asset(
-                                                "assets/icons/+.svg"),
+                                                "assets/icons/+1.svg"),
                                           ),
                                         )
                                       ],

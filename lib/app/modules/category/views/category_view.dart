@@ -199,128 +199,133 @@ class CategoryView extends GetView<CategoryController> {
                       ),
                     ],
                   ),
-                  Stack(
-                    children: [
-                      Container(
-                        width: 150.w,
-                        height: 250.h,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10.r),
-                          border: Border.all(
-                            color: const Color(0xffEBEBEB),
-                          ),
-                        ),
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 145.w,
-                              height: 154.h,
-                              decoration: BoxDecoration(
-                                color: const Color(0xffF5F7FA),
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(10.r),
-                                  topRight: Radius.circular(10.r),
-                                ),
-                              ),
-                              child: Center(
-                                child: Container(
-                                  width: 120.w,
-                                  height: 120.h,
-                                  decoration: const BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage(
-                                          "assets/images/allproduct2.png"),
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
+                  GestureDetector(
+                    onTap: () {
+                      Get.toNamed("/productdetails");
+                    },
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: 150.w,
+                          height: 250.h,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10.r),
+                            border: Border.all(
+                              color: const Color(0xffEBEBEB),
                             ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 15.w, left: 15),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Omron HEM-8712\nBp Monitor",
-                                    style: TextStyle(
-                                      fontFamily: "Overpass",
-                                      fontSize: 13.sp,
-                                      fontWeight: FontWeight.w400,
-                                      color: const Color(0xff091C3F),
+                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                width: 145.w,
+                                height: 154.h,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xffF5F7FA),
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10.r),
+                                    topRight: Radius.circular(10.r),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Container(
+                                    width: 120.w,
+                                    height: 120.h,
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                            "assets/images/allproduct2.png"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
-                                  SizedBox(height: 5.h),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Rp 112.000",
-                                        style: TextStyle(
-                                          fontFamily: "Overpass",
-                                          fontSize: 14.sp,
-                                          fontWeight: FontWeight.w600,
-                                          color: const Color(0xff091C3F),
-                                        ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(top: 15.w, left: 15),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Omron HEM-8712\nBp Monitor",
+                                      style: TextStyle(
+                                        fontFamily: "Overpass",
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.w400,
+                                        color: const Color(0xff091C3F),
                                       ),
-                                      const Spacer(),
-                                      Container(
-                                        width: 48.w,
-                                        height: 24.h,
-                                        decoration: BoxDecoration(
-                                          color: const Color(0xff00A59B),
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(20.r),
-                                            bottomLeft: Radius.circular(20.r),
+                                    ),
+                                    SizedBox(height: 5.h),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Rp 112.000",
+                                          style: TextStyle(
+                                            fontFamily: "Overpass",
+                                            fontSize: 14.sp,
+                                            fontWeight: FontWeight.w600,
+                                            color: const Color(0xff091C3F),
                                           ),
                                         ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            SvgPicture.asset(
-                                              "assets/icons/star.svg",
-                                              width: 13.w,
-                                              height: 12.h,
-                                              color: Colors.white,
+                                        const Spacer(),
+                                        Container(
+                                          width: 48.w,
+                                          height: 24.h,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xff00A59B),
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(20.r),
+                                              bottomLeft: Radius.circular(20.r),
                                             ),
-                                            SizedBox(width: 5.w),
-                                            Text(
-                                              "4.2",
-                                              style: TextStyle(
-                                                fontFamily: "Overpass",
-                                                fontSize: 12.sp,
-                                                fontWeight: FontWeight.w700,
+                                          ),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              SvgPicture.asset(
+                                                "assets/icons/star.svg",
+                                                width: 13.w,
+                                                height: 12.h,
                                                 color: Colors.white,
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                              SizedBox(width: 5.w),
+                                              Text(
+                                                "4.2",
+                                                style: TextStyle(
+                                                  fontFamily: "Overpass",
+                                                  fontSize: 12.sp,
+                                                  fontWeight: FontWeight.w700,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                        top: 0,
-                        left: 0,
-                        child: Container(
-                          width: 50.w,
-                          height: 50.h,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage("assets/images/off.png"),
-                              fit: BoxFit.cover,
-                            ),
-                            shape: BoxShape.rectangle,
+                            ],
                           ),
                         ),
-                      ),
-                    ],
+                        Positioned(
+                          top: 0,
+                          left: 0,
+                          child: Container(
+                            width: 50.w,
+                            height: 50.h,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage("assets/images/off.png"),
+                                fit: BoxFit.cover,
+                              ),
+                              shape: BoxShape.rectangle,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

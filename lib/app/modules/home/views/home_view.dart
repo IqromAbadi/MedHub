@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:medhub/app/modules/add/views/add_view.dart';
 import 'package:medhub/app/modules/cart/views/cart_view.dart';
+import 'package:medhub/app/modules/category/views/category_view.dart';
 import 'package:medhub/app/modules/notification/views/notification_view.dart';
 import 'package:medhub/app/modules/profile/views/profile_view.dart';
 import '../controllers/home_controller.dart';
@@ -245,6 +245,7 @@ class HomeView extends GetView<HomeController> {
                               ],
                             ),
                           ),
+                          SizedBox(height: 20.h),
                         ],
                       ),
                     ),
@@ -253,7 +254,7 @@ class HomeView extends GetView<HomeController> {
               ],
             ),
             const NotificationView(),
-            const AddView(),
+            const CategoryView(),
             const CartView(),
             const ProfileView(),
           ],

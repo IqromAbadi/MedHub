@@ -33,14 +33,33 @@ class SuccesView extends GetView {
                       ),
                     ),
                     SizedBox(height: 10.h),
-                    Text(
-                      "Your Order will be delivered with invoice #INV20240817. You can track the delivery in the order section.",
+                    RichText(
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontFamily: "Overpass",
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xff090F47).withOpacity(0.45),
+                      text: TextSpan(
+                        style: TextStyle(
+                          fontFamily: "Overpass",
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: const Color(0xff090F47).withOpacity(0.45),
+                        ),
+                        children: const [
+                          TextSpan(
+                            text: "Your Order will be delivered with invoice ",
+                          ),
+                          TextSpan(
+                            text: "#INV20240817",
+                            style: TextStyle(
+                              fontFamily: "Overpass",
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff090F47),
+                            ),
+                          ),
+                          TextSpan(
+                            text:
+                                ". You can track the delivery\nin the order section.",
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 40.h),
