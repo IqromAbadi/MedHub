@@ -239,7 +239,7 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Rp 252.000",
+                          "Rp 100.000",
                           style: TextStyle(
                             fontFamily: "Overpass",
                             fontSize: 10.sp,
@@ -248,7 +248,7 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                           ),
                         ),
                         Text(
-                          "500 pellets",
+                          "110 pellets",
                           style: TextStyle(
                             fontFamily: "Overpass",
                             fontSize: 12.sp,
@@ -271,7 +271,7 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Rp 252.000",
+                          "Rp 160.000",
                           style: TextStyle(
                             fontFamily: "Overpass",
                             fontSize: 10.sp,
@@ -280,7 +280,7 @@ class ProductdetailsView extends GetView<ProductdetailsController> {
                           ),
                         ),
                         Text(
-                          "500 pellets",
+                          "300 pellets",
                           style: TextStyle(
                             fontFamily: "Overpass",
                             fontSize: 12.sp,

@@ -251,9 +251,9 @@ class HomeController extends GetxController {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 5,
+                    color: Colors.black.withOpacity(0.05),
+                    spreadRadius: 1,
+                    blurRadius: 10,
                     offset: const Offset(0, 3),
                   ),
                 ],

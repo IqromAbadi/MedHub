@@ -14,6 +14,7 @@ class ProfileView extends GetView<ProfileController> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w),
           child: Text(
