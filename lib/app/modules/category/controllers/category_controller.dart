@@ -26,7 +26,7 @@ class CategoryController extends GetxController {
   }) {
     return Container(
       width: 110.w,
-      height: 162.h,
+      height: 165.h,
       decoration: BoxDecoration(
         color: Color(0xffF5F7FA),
         borderRadius: BorderRadius.circular(10.r),

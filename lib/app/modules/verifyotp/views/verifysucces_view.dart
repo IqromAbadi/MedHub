@@ -49,7 +49,7 @@ class VerifysuccesView extends GetView {
                     ),
                     SizedBox(height: 10.h),
                     Text(
-                      "Congratulations, your phone number has been verified. You can start using the app",
+                      "Congratulations, your phone\nnumber has been verified. You can\nstart using the app",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: "Overpass",
@@ -72,7 +72,7 @@ class VerifysuccesView extends GetView {
                 minimumSize: Size(311.w, 50.w),
               ),
               onPressed: () {
-                Get.offAllNamed('/home');
+                Get.toNamed('/home');
               },
               child: Text(
                 "CONTINUE",

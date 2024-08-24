@@ -90,7 +90,7 @@ class CheckoutView extends GetView<CheckoutController> {
                     SizedBox(height: 20.h),
                     Container(
                       width: double.infinity,
-                      height: 93.h,
+                      height: 100.w,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(6.w),
                         border: Border.all(
@@ -180,7 +180,7 @@ class CheckoutView extends GetView<CheckoutController> {
                     SizedBox(height: 10.h),
                     Container(
                       width: double.infinity,
-                      height: 93.h,
+                      height: 100.w,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(6.w),
                         border: Border.all(

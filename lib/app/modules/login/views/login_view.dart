@@ -123,10 +123,10 @@ class LoginView extends GetView<LoginController> {
                       minimumSize: Size(311.w, 50.w),
                     ),
                     onPressed: () {
-                      Get.offAllNamed("/home");
+                      Get.toNamed("/home");
                     },
                     child: Text(
-                      "LOGIN",
+                      "SIGN IN",
                       style: TextStyle(
                         fontFamily: "Overpass",
                         fontSize: 16.sp,
